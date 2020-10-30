@@ -10,7 +10,6 @@ pipeline{
                     sh 'sudo apt-get update'
                     sh 'curl https://get.docker.com | sudo bash'
                     sh 'docker --version'
-                    sh 'sudo docker login -u sherazshahid017 -p Sshahid98'
                 }
             }
             ///////////////////////////////////////////////////
