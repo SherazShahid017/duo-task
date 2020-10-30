@@ -11,7 +11,7 @@ services:
 
 
   nginx:
-    image: nginx/latest
+    image: nginx:latest
     ports:
     - target: 80
       published: 80

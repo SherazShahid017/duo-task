@@ -1,5 +1,8 @@
 pipeline{
     agent any
+    /*environment {
+        loginDock = credentials('docker_login')
+    }*/
         stages{
             ////////////////////////////////////////////////////
             stage('Download Docker') {
