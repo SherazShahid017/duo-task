@@ -3,7 +3,7 @@ version: "3.8"
 services:
   flask-app:
     build: ./
-    image: 35.242.156.82:8082/duo-task-pipeline/myflask-app:latest
+    image: 35.242.156.82:8082/sherazrepo/myflask-app:latest
     ports:
     - target: 5000
       published: 5000
