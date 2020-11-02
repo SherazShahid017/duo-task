@@ -21,6 +21,12 @@ pipeline{
                 }
             }
             ////////////////////////////////////////////////////
+            stage ('Push Image(s)') {
+                steps {
+                    sh 'sudo docker-push 35.242.156.82:8082/myflask-app:8082 '
+                }
+            }
+            ////////////////////////////////////////////////////
             stage ('Deploy') {
                 steps {
                     sh 'sudo docker-compose pull && sudo docker-compose up -d'
