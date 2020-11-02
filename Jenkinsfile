@@ -23,6 +23,7 @@ pipeline{
             ////////////////////////////////////////////////////
             stage ('Push Image(s)') {
                 steps {
+                    sh 'sudo docker login -u admin -p sheraz123 35.242.156.82:8082'
                     sh 'sudo docker push 35.242.156.82:8082/myflask-app:latest'
                 }
             }
