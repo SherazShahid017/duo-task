@@ -1,9 +1,9 @@
-version: "3.8"
+version: "3.7"
 
 services:
   flask-app:
     build: ./
-    image: 35.242.156.82:8082/myflask-app:latest
+    image: sherazshahid017/myflask-app:latest
     ports:
     - target: 5000
       published: 5000
